@@ -1,10 +1,12 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+
+
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.print("This how git works?");
-
+        Container container = new Container();
+        container.add(10);
+        container.add(20);
+        System.out.println(container.get(1)); // 20
+        container.remove(0);
+        System.out.println(container.getSize()); // 1
     }
 }
